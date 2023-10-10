@@ -1,0 +1,28 @@
+name: lipyds-dev
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Base depends
+  - cython
+  - matplotlib
+  - nptyping
+  - numpy >=1.20.0
+  - pandas
+  - python
+  - pyvista
+  - scikit-learn>=0.21.0
+  - scipy
+    # Testing
+  - pytest
+  - pytest-cov
+  - codecov
+  - mdanalysis
+
+  # use code in jupyter
+  - jupyter
+  - jupyter_contrib_nbextensions
+  - nglview
+  - ipykernel
+  - trame
+  - seaborn

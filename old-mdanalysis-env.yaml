@@ -1,0 +1,30 @@
+name: old-mda-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Base depends
+  - cython<3
+  - matplotlib
+  - nptyping
+  - numpy ==1.21
+  - pandas
+  - python
+  - pyvista
+  - scikit-learn>=0.21.0
+  - scipy
+    # Testing
+  - pytest
+  - pytest-cov
+  - codecov
+
+  # use code in jupyter
+  - jupyter
+  - jupyter_contrib_nbextensions
+  - nglview
+  - ipykernel
+  - trame
+  - seaborn
+
+  - pip:
+      - git+https://github.com/lilyminium/mdanalysis.git@slc6-transporters#egg=mdanalysis&subdirectory=package
